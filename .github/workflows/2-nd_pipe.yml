@@ -1,0 +1,17 @@
+name: CI\CD Pipeline
+
+on:
+  push:
+    branches: 
+      - master
+      
+
+jobs:
+  my_test:
+    runs-on:  ubuntu-latest
+    
+    steps:
+    - name: Print Hello
+      run: echo "Hello World"        
+      
+    
